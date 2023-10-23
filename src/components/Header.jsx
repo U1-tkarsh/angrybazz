@@ -18,7 +18,7 @@ function Header() {
     { name: "Complete Warehousing Solution", dropdown: false },
     { name:  "Call Us At 1300 779 438", dropdown: false },
   ];
-
+  
   const handleMobileMenuToggle = () => {
     // console.log('here')
     setShowMobileMenu(!showMobileMenu);
