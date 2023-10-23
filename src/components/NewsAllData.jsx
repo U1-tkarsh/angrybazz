@@ -18,25 +18,23 @@ const NewsAllData = ({ data }) => {
   }
   return (
     <Card className="relative">
-      <CardHeader floated={false}>
-        <img src={newsPreviewImage} alt="profile-picture" />
-      </CardHeader>
-      <CardBody className="text-center">
+      <img className="rounded-2xl w-full" src={newsPreviewImage} alt="profile-picture" />
+
+      <CardBody className="text-center p-4">
         <Typography variant="h5" className="mb-2">
           {newsTitle}
         </Typography>
-        <Typography>{newsDescription.slice(0, 120)}</Typography>
+        <Typography className="hidden sm:block">{newsDescription.slice(0, 120)}</Typography>
       </CardBody>
-      <CardFooter divider className="flex justify-center gap-7 pt-2">
+
+      <CardFooter divider className="flex justify-between items-center p-4">
         <Typography variant="small" className="capitalize">
           <span className="font-semibold">Category:</span> {newsCategory}
         </Typography>
-      </CardFooter>
-      <CardActions>
-        <Button onClick={ReadMore} className="absolute left-80" size="large" color="secondary">
+        <Button onClick={ReadMore} size="large" color="secondary">
           Read More
         </Button>
-      </CardActions>
+      </CardFooter>
     </Card>
   );
 };

@@ -18,6 +18,7 @@ const SITEMAP = [
 const currentYear = new Date().getFullYear();
  
 export function FooterWithSitemap() {
+  
   return (
     <footer className="relative max-w-10xl ">
       <div className="mx-auto w-full max-w-10xl px-8 bg-blue-900">

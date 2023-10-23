@@ -29,11 +29,11 @@ const NewsData = () => {
     }, [currentIndex, newsData]);
 
     return (
-        <div className='news__data__main py-8 lg:py-20'>
-            <h1 className='text-3xl lg:text-left text-center lg:text-5xl font-bold'>News</h1>
+        <div className='news__data__main bg-red-900 py-8 lg:py-20'>
+            <h1 className='text-3xl lg:text-left text-center lg:text-5xl text-white pl-10 font-bold'>News</h1>
 
             <div className="news__all__data mt-8">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
                     {visibleCards.map(data => <NewsAllData key={data._id} data={data} />)}
                 </div>
             </div>
